@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/dialog_imagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        app:layout_heightPercent="80%h">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_dialog_loading_bg"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="13.6%w">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="附件下载地址"
+                    android:textColor="#4A4A4A" />
+
+                <ImageView
+                    android:id="@+id/btn_right_close"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:padding="15dp"
+                    android:src="@mipmap/product_show_closed" />
+
+                <TextView
+                    android:id="@+id/btn_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="下载须知"
+                    android:textColor="#666666" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dialog_download_bottom"
+                android:orientation="vertical">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input_circle_grey"
+                    android:gravity="center_vertical"
+                    app:layout_heightPercent="13.6%w"
+                    app:layout_marginBottomPercent="2%w"
+                    app:layout_marginLeftPercent="2%w"
+                    app:layout_marginRightPercent="2%w"
+                    app:layout_marginTopPercent="2%w">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/puroduct_detail_download"
+                        app:layout_marginLeftPercent="3%w"
+                        app:layout_marginRightPercent="2%w" />
+
+                    <TextView
+                        android:id="@+id/dialog_downurl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="https://baidu.com/test.apk"
+                        android:textColor="#4A4A4A" />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="12%w">
+
+                    <TextView
+                        android:id="@+id/btn_copyurl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/account_rigister_select"
+                        android:text="复制链接"
+                        android:textColor="#ffffff"
+                        app:layout_marginLeftPercent="2%w"
+                        app:layout_marginRightPercent="2%w"
+                        app:layout_paddingBottomPercent="1.5%w"
+                        app:layout_paddingLeftPercent="2%w"
+                        app:layout_paddingRightPercent="2%w"
+                        app:layout_paddingTopPercent="1.5%w" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发送下载地址到邮箱"
+                    android:textColor="#4A4A4A"
+                    android:textSize="13sp"
+                    app:layout_marginLeftPercent="3%w" />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input_circle_grey"
+                    android:gravity="center_vertical"
+                    app:layout_heightPercent="13.6%w"
+                    app:layout_marginBottomPercent="2%w"
+                    app:layout_marginLeftPercent="2%w"
+                    app:layout_marginRightPercent="2%w"
+                    app:layout_marginTopPercent="2%w">
+
+                    <EditText
+                        android:id="@+id/dialog_edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:hint="如：123456@qq.com"
+                        android:paddingLeft="10dp"
+                        android:textColor="#4A4A4A"
+                        android:textColorHint="#9B9B9B"
+                        android:textSize="13sp" />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="12%w"
+                    app:layout_marginBottomPercent="8%w">
+
+                    <TextView
+                        android:id="@+id/btn_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/account_rigister_select"
+                        android:text="发送"
+                        android:textColor="#ffffff"
+                        app:layout_marginLeftPercent="2%w"
+                        app:layout_marginRightPercent="2%w"
+                        app:layout_paddingBottomPercent="1.5%w"
+                        app:layout_paddingLeftPercent="5.6%w"
+                        app:layout_paddingRightPercent="5.6%w"
+                        app:layout_paddingTopPercent="1.5%w" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:src="@mipmap/btn_close_white"
+                app:layout_marginBottomPercent="6%h" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>
