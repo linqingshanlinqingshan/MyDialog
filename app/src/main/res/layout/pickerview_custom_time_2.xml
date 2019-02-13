@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAF8">
+
+
+        <TextView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingTop="11dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="11dp"
+            android:text="取消"
+            android:textColor="#9B9B9B"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="11dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="11dp"
+            android:text="完成"
+            android:textColor="#007AFF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E1E0E0" />
+
+
+    <!--此部分需要完整复制过去，删减或者更改ID会导致初始化找不到内容而报空-->
+    <LinearLayout
+        android:id="@+id/timepicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.example.administrator.mydialog.select_time.WheelView
+            android:id="@+id/hour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <com.example.administrator.mydialog.select_time.WheelView
+            android:id="@+id/min"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+
+        <com.example.administrator.mydialog.select_time.WheelView
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_horizontal"
+            android:layout_weight="2" />
+
+
+        <com.example.administrator.mydialog.select_time.WheelView
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2" />
+
+
+        <com.example.administrator.mydialog.select_time.WheelView
+            android:id="@+id/day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <com.example.administrator.mydialog.select_time.WheelView
+            android:id="@+id/second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+
+        <!--<View-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="2"-->
+        <!--android:layout_height="match_parent" />-->
+
+
+        <!--<com.interaction.briefstore.view.widget.timer.wheelview.WheelView-->
+        <!--android:id="@+id/year"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="2.5"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+        <!--<com.interaction.briefstore.view.widget.timer.wheelview.WheelView-->
+        <!--android:id="@+id/month"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1.8"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+        <!--<com.interaction.briefstore.view.widget.timer.wheelview.WheelView-->
+        <!--android:id="@+id/day"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1.8"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+        <!--<View-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="2"-->
+        <!--android:layout_height="match_parent" />-->
+
+
+        <!--<com.interaction.briefstore.view.widget.timer.wheelview.WheelView-->
+        <!--android:id="@+id/hour"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<com.interaction.briefstore.view.widget.timer.wheelview.WheelView-->
+        <!--android:id="@+id/min"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"  />-->
+
+        <!--<com.interaction.briefstore.view.widget.timer.wheelview.WheelView-->
+        <!--android:id="@+id/second"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
