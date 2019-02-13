@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_download"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="download dialog"
-        android:padding="15dp"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:background="#dedede"
         android:layout_margin="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="#dedede"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="download dialog" />
+
+    <TextView
+        android:id="@+id/tv_select_time_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#ffcdcd"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="select time day" />
+
+    <TextView
+        android:id="@+id/tv_select_time_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#cdcfff"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="select time month" />
+
+    <TextView
+        android:id="@+id/tv_edit_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#cdffd6"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="select edit_data" />
+
+
+    <TextView
+        android:id="@+id/tv_select_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#e8cdff"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="select date" />
 
 </LinearLayout>

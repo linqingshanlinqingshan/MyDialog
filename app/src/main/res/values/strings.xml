@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">MyDialog</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+
+    <string name="selectHuxing">请选择需求户型</string>
+    <string name="selectColorSystem">请选择色系偏好</string>
+    <string name="selectStyle">请选择风格偏好</string>
+    <string name="selectBudget">请选择预算范围</string>
+    <string name="selectIndustry">请选择所在行业</string>
+    <string name="selectInterest">请选择兴趣爱好</string>
+    <string name="selectInclination">请选择装修倾向</string>
+
 </resources>
